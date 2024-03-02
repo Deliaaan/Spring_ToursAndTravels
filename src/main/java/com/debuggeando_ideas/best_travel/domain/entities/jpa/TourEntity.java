@@ -39,6 +39,7 @@ public class TourEntity implements Serializable {
             mappedBy = "tour"
     )
     private Set<TicketEntity> tickets;
+
     @ManyToOne
     @JoinColumn(name = "id_customer")
     private CustomerEntity customer;
